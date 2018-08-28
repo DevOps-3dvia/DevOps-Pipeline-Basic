@@ -55,7 +55,7 @@ pipeline {
                 git rev-parse refs/heads/master || true
                 git rev-parse HEAD || true
                 git status
-                git push https://sachinps:H7tDUgcl@github.com/sachinps/3DVIA-DevOps.git master
+                git push https://DevOps-3dvia:123#3dplm@github.com/sachinps/DevOps-Pipeline-Basic.git master
                 ''' 
             }
         }
