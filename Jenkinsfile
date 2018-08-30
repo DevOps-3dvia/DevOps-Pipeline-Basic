@@ -55,7 +55,7 @@ pipeline {
                 git rev-parse refs/heads/master || true
                 git rev-parse HEAD || true
                 git status
-                git push https://github.com/DevOps-3dvia/DevOps-Pipeline-Basic.git master
+                git push origin master
                 ''' 
             }
         }
