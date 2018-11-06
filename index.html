@@ -1,33 +1,50 @@
- <!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
-     <title>HTML Application test1.44444444444</title>
-	 <link href="css/site.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="cloud-image">
-            <img src="img/successCloudNew.svg" />
-        </div>
-        <div class="content">
-            <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20HTML%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
-                <img src="img/tweetThis.svg" />
-            </a>            
-        </div>
-            <div class="content-body">
-                <div class="success-text">Success V3.0!</div>
-                <div class="description line-1"> Dev Ops First Phase - Cont. Integration Completed</div>
-                <div class="description line-1"> Dev Ops Second Phase- Cont.  Deployment Almost Done</div>
-                <br>
-                <div class="description line-1" align ="center"> DevOps Life Cycle Chart
-                    <img src ="img/DevOps.png">
 
-            </div>
-        </div>
-    </div>
+  <div class="container">
+	<fieldset id="container">
+		<form name="calculator">
+
+			<input id="display" type="text" name="display" readonly>
+
+			<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+			<input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+			<input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+			<input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+			<br>
+			<input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+			<input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+			<input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+			<input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+			<br>
+			<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+			<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+			<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+			<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+			<br>
+			<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+			<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+			<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+			<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+		</form>
+	</fieldset>
+</div>
+  
+  
+
 </body>
 
 </html>
